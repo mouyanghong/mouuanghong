@@ -1,0 +1,463 @@
+body,
+html,
+input,
+div,
+span,
+a,
+form,
+img,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h3,
+h2,
+h4,
+h5,
+h6,
+select,
+textarea,
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    font-size: 0;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+}
+
+.header_heart {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .header_logo {} */
+
+.header_items>span {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.header>.header_heart>.header_items>.car {
+    margin-left: 30px;
+}
+
+.header>.header_heart>.header_items>.iconfont {
+    margin-left: 30px;
+}
+
+.header_heart>.header_items>.number {
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.header_items>.round {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #464646;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.header_items>span:hover {
+    cursor: pointer;
+}
+
+.header_items>.iconfont:hover {
+    background-color: rgb(234, 215, 236);
+}
+
+body:hover {
+    cursor: default;
+}
+
+.header_login .header_registered .car {
+    text-decoration: underline;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: #464646;
+    position: relative;
+}
+
+.navigation {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.navigation>span {
+    height: 100%;
+}
+
+.dec {
+    margin-top: 15px;
+}
+
+.navigation>span:hover {
+    cursor: pointer;
+}
+
+.man {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    z-index: 2;
+}
+
+.man_top {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.segmentation {
+    border-bottom: 1px solid rosybrown;
+}
+
+.man_top>span>div>img {
+    width: 60px;
+    height: 60px;
+}
+
+.man_bottom {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.man_bottom>span>div>img {
+    width: 60px;
+    height: 60px;
+}
+
+.remai {
+    width: 100%;
+}
+
+.remai>fieldset {
+    width: 80%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 auto;
+}
+
+.remai>fieldset>ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.remai>fieldset>ul li>a>span {
+    font-size: 20px;
+}
+
+.remai>fieldset>ul li>a :hover {
+    text-decoration: underline;
+}
+
+.remai>fieldset>legend {
+    font-size: 24px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.xiezi ul li {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.xiezi ul li img:hover {
+    border: 1px solid #000;
+}
+
+.xiezi ul li img {
+    background-color: #fff;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.nv,
+.cuande,
+.daide {
+    display: none;
+}
+
+.xinping {
+    width: 100%;
+}
+
+.xinping>fieldset {
+    width: 80%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 auto;
+}
+
+.xinping>fieldset>legend {
+    font-size: 24px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.xin ul li {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.xin ul li img:hover {
+    border: 1px solid #000;
+}
+
+.xin ul li img {
+    background-color: #fff;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.jietou {
+    width: 100%;
+}
+
+.xianxing {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #464646;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tupian {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.tupian :first-child {
+    float: left;
+}
+
+.tupian :last-child {
+    float: right;
+}
+
+.tu img {
+    /* display: block; */
+    vertical-align: top;
+}
+
+.tu {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tu img:hover {
+    opacity: .8;
+}
+
+.tupian img:hover {
+    opacity: .8;
+}
+
+
+/* .tu :first-child {
+    float: left;
+}
+
+.tu :last-child {
+    float: right;
+} */
+
+.tu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.converse {
+    width: 100%;
+    height: 300px;
+    background-color: #464646;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.converse h2 {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.converse p {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.converse a {
+    margin: 30px;
+}
+
+.converse img {
+    width: 75px;
+    height: 75px;
+}
+
+.list {
+    height: 600px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.list_items {
+    box-sizing: border-box;
+    width: 1000px;
+    border-top: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 280px;
+}
+
+table {
+    text-align: center;
+}
+
+thead tr {
+    height: 50px;
+    line-height: 50px;
+}
+
+tbody {
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+tbody tr {
+    height: 24px;
+    line-height: 24px;
+}
+
+.list_it {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.foot {
+    background-color: black;
+    text-align: center;
+}
+
+.foot a {
+    margin-top: 20px;
+}
+
+.foot p,
+.foot a {
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.liaoliao {
+    position: absolute;
+    top: 200px;
+    right: 0;
+}

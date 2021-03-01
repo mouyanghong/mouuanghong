@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .fl {
+            float: left;
+        }
+        
+        .fr {
+            float: right;
+        }
+        
+        .clearfix {
+            clear: both;
+            zoom: 1;
+        }
+        
+        .shopping {
+            width: 1200px;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+        
+        .shopping .header {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #ccc;
+            color: #000000;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .shopping .header ul {
+            padding-left: 30px;
+        }
+        
+        .shopping .header ul li {
+            width: 190px;
+            list-style: none;
+        }
+        
+        .shopping .footer {
+            width: 100%;
+            height: 50px;
+            background: #ccc;
+            color: #000000;
+            text-align: left;
+        }
+        
+        .shopping .footer .footlf {
+            width: 200px;
+            line-height: 50px;
+            margin-left: 30px;
+        }
+        
+        .shopping .footer .footrg {
+            width: 600px;
+            text-align: right;
+        }
+        
+        .shopping .footer .footrg span:nth-child(1) {
+            display: inline-block;
+            padding: 0px 25px;
+            background: black;
+            color: white;
+            line-height: 48px;
+            margin-right: 20px;
+        }
+        
+        .shopping .footer .footrg span:nth-child(2),
+        .shopping .footer .footrg span:nth-child(3) {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .shopping .footer .footrg span:nth-child(4) {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 50px;
+            margin-right: 50px;
+        }
+        
+        .shopping .footer .footrg s {
+            color: red;
+        }
+        
+        .content {
+            margin: 10px 0px;
+        }
+        
+        .content dl {
+            margin-bottom: 20px;
+        }
+        
+        .content dl dt {
+            border: 1px solid #CCCCCC;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        
+        .content dl dt {
+            padding-left: 20px;
+        }
+        
+        .content dl dd {
+            padding-left: 20px;
+            border: 1px solid #CCCCCC;
+            height: 100px;
+            line-height: 100px;
+            border-top: none;
+        }
+        
+        .content dl dd ul li {
+            list-style: none;
+        }
+        
+        .content dl dd ul li img {
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+        }
+        
+        .content dl dd ul li {
+            width: 190px;
+        }
+        
+        .content dl dd ul li s {
+            color: red;
+            font-weight: bold;
+        }
+        
+        .content dl dd ul li input {
+            width: 30px;
+        }
+        
+        s {
+            text-decoration: none;
+        }
+        
+        .content .del {
+            cursor: pointer;
+        }
+        
+        .minus {
+            padding: 0px 10px;
+            background: red;
+            cursor: pointer;
+        }
+        
+        .plus {
+            padding: 0px 10px;
+            background: red;
+            cursor: pointer;
+        }
+        
+        input {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shopping">
+        <div class="header clearfix">
+            <ul>
+                <li class="fl"><input type="checkbox" name="" class="all">全选</li>
+                <li class="fl">商品</li>
+                <li class="fl">单价</li>
+                <li class="fl">数量</li>
+                <li class="fl">价格</li>
+                <li class="fl">操作</li>
+            </ul>
+        </div>
+        <div class="content">
+            <dl>
+                <dt>店铺：xxx快餐店1</dt>
+                <dd>
+                    <ul>
+                        <li class="fl"><input type="checkbox" name="" class="ischeck"></li>
+                        <li class="fl">
+                            <img src="imges/01.jpg" />
+                            <span>凉茶</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price">100</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="minus">-</span>
+                            <input type="text" name="" class="count" value="1">
+                            <span class="plus">+</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price_sum">100</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="del">删除</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>店铺：xxx快餐店2</dt>
+                <dd>
+                    <ul>
+                        <li class="fl"><input type="checkbox" name="" class="ischeck"></li>
+                        <li class="fl">
+                            <img src="imges/02.jpg" />
+                            <span>凉茶2</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price">200</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="minus">-</span>
+                            <input type="text" name="" class="count" value="1">
+                            <span class="plus">+</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price_sum">200</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="del">删除</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>店铺：xxx快餐店3</dt>
+                <dd>
+                    <ul>
+                        <li class="fl"><input type="checkbox" name="" class="ischeck"></li>
+                        <li class="fl">
+                            <img src="imges/02.jpg" />
+                            <span>凉茶3</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price">300</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="minus">-</span>
+                            <input type="text" name="" class="count" value="1">
+                            <span class="plus">+</span>
+                        </li>
+                        <li class="fl">
+                            <s>$<span class="price_sum">300</span></s>
+                        </li>
+                        <li class="fl">
+                            <span class="del">删除</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer clearfix">
+            <div class="footlf fl">
+                <input type="checkbox" name="" class="all_is">反选
+                <input type="checkbox" name="" id="cancel">取消
+            </div>
+            <div class="footrg fr">
+                <span>继续购物</span>
+                <span>已选商品<s id="piece">0</s>件</span>
+                <span>合计(不含运费)：￥<s class="sum_">0.00</s></span>
+                <span>结算</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    //购物车功能要求
+    //1.勾选全选框 商品勾选状态为已勾选状态 并且计算商品合计  单价合计
+    //2.取消勾选时取消所以商品勾选
+    var del = document.getElementsByClassName("del"); //删除
+    var dl = document.getElementsByTagName("dl");
+    var all = document.getElementsByClassName("all")[0]; //获取全选按钮
+    var all_is = document.getElementsByClassName("all_is")[0]; //获取取反按钮
+    var ischeck = document.getElementsByClassName("ischeck"); //获取商品勾选状态复选框节点
+    var minus = document.getElementsByClassName("minus"); //商品减
+    var plus = document.getElementsByClassName("plus"); //商品加
+    var count = document.getElementsByClassName("count"); //商品数量
+    var price = document.getElementsByClassName("price"); //获得单价
+    var price_sum = document.getElementsByClassName("price_sum"); //获得商品价格
+    var sum_ = document.getElementsByClassName("sum_")[0]; //获得商品总价格
+    var piece = document.getElementById("piece"); //已选商品件数
+    var cancel = document.getElementById("cancel"); //取消选择
+
+    //全选功能
+    all_();
+
+    function all_() {
+        all.onchange = function() {
+            //当全选框状态为ture 的时候循环勾选  商品状态   为false 则相反
+            if (all.checked) {
+                for (var i = 0; i < ischeck.length; i++) {
+                    ischeck[i].checked = true;
+                }
+                piece_(); //已选商品件数
+            } else {
+                for (var i = 0; i < ischeck.length; i++) {
+                    ischeck[i].checked = false;
+                }
+                piece_(); //已选商品件数
+            }
+            shss(); //每次商品勾选或者数量发生改变计算总额数
+        }
+    }
+    //商品状态勾选 
+    comm_ischeck();
+
+    function comm_ischeck() {
+        for (var i = 0; i < ischeck.length; i++) {
+            (function(j) {
+                ischeck[j].onclick = function() {
+                    shss(); //每次商品勾选或者数量发生改变计算总额数
+                    piece_(); //每次商品勾选状态发生变化计算已选商品件数
+
+                    for (var k = 0; j < ischeck.length; k++) { //循环判断商品勾选状态
+                        if (!ischeck[k].checked) { //如果有一个为flase 则全选框取消勾选
+                            all.checked = false;
+                            break; //结束循环
+                        }
+                        //否则勾选
+                        all.checked = true;
+                    }
+                }
+            })(i)
+        }
+    }
+    //反选
+    all_iss();
+
+    function all_iss() {
+        all_is.onchange = function() {
+            //循环遍历勾选状态 商品状态勾选则取消勾选
+            for (var i = 0; i < ischeck.length; i++) {
+                ischeck[i].checked = ischeck[i].checked ? false : true;
+            }
+            shss(); //每次商品勾选或者数量发生改变计算总额数
+            piece_(); //每次商品勾选状态发生变化计算已选商品件数
+        }
+    }
+    //减少商品
+    add_is();
+
+    function add_is() {
+        for (var i = 0; i < minus.length; i++) {
+            (function(i) {
+                minus[i].onclick = function() {
+                    if (parseInt(count[i].value) < 2) {
+                        count[i].value = 1;
+                    } else {
+                        count[i].value = parseInt(count[i].value) - 1;
+                    }
+                    // parseInt(count[i].value) 因为得到的value 是string 类型 运算需要进行类型转换
+                    //如果数量值<1默认为0
+                    //count[i].value=parseInt(count[i].value)<1?0:(parseInt(count[i].value)-1);
+
+                    var pric = price[i].innerHTML; //商品单价
+                    price_sum[i].innerHTML = parseInt(pric) * parseInt(count[i].value); //商品总结价格等于=商品单价*商品数量
+
+                    shss(); //每次商品勾选或者数量发生改变计算总额数
+                    piece_(); //每次商品勾选状态发生变化计算已选商品件数
+                }
+            })(i)
+        }
+    }
+    //添加商品
+    add();
+
+    function add() {
+        for (var i = 0; i < plus.length; i++) {
+            //立即执行函数得到下标
+            (function(i) {
+                plus[i].onclick = function() {
+                    var pric = price[i].innerHTML; //商品单价
+                    //因为得到的value 是string 类型 运算需要进行类型转换
+                    count[i].value = parseInt(count[i].value) + 1; //改变数量值
+                    price_sum[i].innerHTML = parseInt(pric) * parseInt(count[i].value); //商品总结价格等于=商品单价*商品数量
+                    shss(); //每次商品勾选或者数量发生改变计算总额数
+                    piece_(); //每次商品勾选状态发生变化计算已选商品件数
+                }
+            })(i)
+        }
+    }
+    //count
+    count_();
+
+    function count_() {
+        for (var i = 0; i < count.length; i++) {
+            (function(i) {
+                count[i].onchange = function() {
+                    var pric = price[i].innerHTML; //商品单价
+                    //因为得到的value 是string 类型 运算需要进行类型转换
+                    count[i].value = parseInt(count[i].value) + 1; //改变数量值
+                    price_sum[i].innerHTML = parseInt(pric) * parseInt(count[i].value); //商品总结价格等于=商品单价*商品数量
+                    shss(); //每次商品勾选或者数量发生改变计算总额数
+                    piece_(); //每次商品勾选状态发生变化计算已选商品件数
+                }
+            })(i)
+        }
+    }
+
+    //计算已选商品件数
+    piece_();
+
+    function piece_() {
+        piece.innerHTML = 0;
+        for (var i = 0; i < ischeck.length; i++) {
+            if (ischeck[i].checked) {
+                piece.innerHTML = parseInt(piece.innerHTML) + parseInt(count[i].value);
+            }
+        }
+    }
+
+    //计算商品总额
+    shss();
+
+    function shss() {
+        sum_.innerHTML = 0;
+        for (var i = 0; i < ischeck.length; i++) {
+            if (ischeck[i].checked) {
+                console.log(sum_.innerHTM);
+                sum_.innerHTML = parseInt(sum_.innerHTML) + parseInt(price_sum[i].innerHTML);
+            }
+        }
+    }
+
+    //取消选择
+    cancel_();
+
+    function cancel_() {
+        //取消按钮点击事件
+        cancel.onclick = function() {
+            for (var i = 0; i < ischeck.length; i++) {
+                ischeck[i].checked = false;
+            }
+            shss();
+            piece_();
+        }
+    }
+    //删除
+    del_();
+
+    function del_() {
+        for (var i = 0; i < del.length; i++) {
+            (function(i) {
+                del[i].onclick = function() {
+                    dl[i].parentNode.removeChild(dl[i]);
+                    shss(); //每次商品勾选或者数量发生改变计算总额数
+                    piece_(); //每次商品勾选状态发生变化计算已选商品件数
+                }
+            })(i)
+        }
+    }
+</script>
+
+</html>
